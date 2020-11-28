@@ -31,8 +31,8 @@ bootstrapGenomesfun <- function(genomes){
 }
 
 ##############################################################################################
-sub_catalogue=read.table("/Users/weisiliu/Desktop/Paper work/BBN mouse/Paper result data/Figure 3_SBS/96_signature_Histogram/sub_catalogue_All.txt",sep="\t",header=TRUE)
-muttype_template <- read.table("/Users/weisiliu/Desktop/Paper work/BBN mouse/Paper result data/Figure 3_SBS/96_signature_Histogram/MutationType_template.txt", sep = "\t", header = T, as.is = T)
+sub_catalogue=read.table("~/sub_catalogue_All.txt",sep="\t",header=TRUE)
+muttype_template <- read.table("~/MutationType_template.txt", sep = "\t", header = T, as.is = T)
 
 control_profile=sub_catalogue[,3:11]
 row.names(control_profile)=sub_catalogue$MutationType
